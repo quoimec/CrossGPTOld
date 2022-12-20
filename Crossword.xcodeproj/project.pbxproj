@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB330291294FBA00009975A9 /* CrosswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB330290294FBA00009975A9 /* CrosswordApp.swift */; };
+		CB330295294FBA01009975A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB330294294FBA01009975A9 /* Assets.xcassets */; };
+		CB330298294FBA01009975A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB330297294FBA01009975A9 /* Preview Assets.xcassets */; };
+		CB33029A294FBA01009975A9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB330299294FBA01009975A9 /* Persistence.swift */; };
+		CB33029D294FBA01009975A9 /* Crossword.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB33029B294FBA01009975A9 /* Crossword.xcdatamodeld */; };
+		CB3302A7294FBA01009975A9 /* CrosswordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302A6294FBA01009975A9 /* CrosswordTests.swift */; };
+		CB3302B1294FBA01009975A9 /* CrosswordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302B0294FBA01009975A9 /* CrosswordUITests.swift */; };
+		CB3302B3294FBA01009975A9 /* CrosswordUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302B2294FBA01009975A9 /* CrosswordUITestsLaunchTests.swift */; };
+		CB3302C7294FBC0B009975A9 /* SchacherKit in Frameworks */ = {isa = PBXBuildFile; productRef = CB3302C6294FBC0B009975A9 /* SchacherKit */; };
+		CB3302C9294FC003009975A9 /* PuzzleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302C8294FC003009975A9 /* PuzzleView.swift */; };
+		CB3302CC29501F3F009975A9 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = CB3302CB29501F3F009975A9 /* OrderedCollections */; };
+		CB3302CE295047F4009975A9 /* PuzzleIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302CD295047F4009975A9 /* PuzzleIndex.swift */; };
+		CB3302D029504810009975A9 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302CF29504810009975A9 /* Enums.swift */; };
+		CB3302D229504866009975A9 /* PuzzleAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302D129504866009975A9 /* PuzzleAnswer.swift */; };
+		CB3302D42950488A009975A9 /* PuzzleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302D32950488A009975A9 /* PuzzleCell.swift */; };
+		CB3302D6295048AD009975A9 /* PuzzleSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302D5295048AD009975A9 /* PuzzleSize.swift */; };
+		CB3302D8295048F6009975A9 /* Puzzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302D7295048F6009975A9 /* Puzzle.swift */; };
+		CB3302DB295049C4009975A9 /* PuzzleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3302DA295049C4009975A9 /* PuzzleController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB3302A3294FBA01009975A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB330285294FBA00009975A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB33028C294FBA00009975A9;
+			remoteInfo = Crossword;
+		};
+		CB3302AD294FBA01009975A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB330285294FBA00009975A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB33028C294FBA00009975A9;
+			remoteInfo = Crossword;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB33028D294FBA00009975A9 /* Crossword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crossword.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB330290294FBA00009975A9 /* CrosswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordApp.swift; sourceTree = "<group>"; };
+		CB330294294FBA01009975A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB330297294FBA01009975A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB330299294FBA01009975A9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		CB33029C294FBA01009975A9 /* Crossword.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crossword.xcdatamodel; sourceTree = "<group>"; };
+		CB3302A2294FBA01009975A9 /* CrosswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrosswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3302A6294FBA01009975A9 /* CrosswordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordTests.swift; sourceTree = "<group>"; };
+		CB3302AC294FBA01009975A9 /* CrosswordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrosswordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB3302B0294FBA01009975A9 /* CrosswordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordUITests.swift; sourceTree = "<group>"; };
+		CB3302B2294FBA01009975A9 /* CrosswordUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrosswordUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB3302C8294FC003009975A9 /* PuzzleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleView.swift; sourceTree = "<group>"; };
+		CB3302CD295047F4009975A9 /* PuzzleIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleIndex.swift; sourceTree = "<group>"; };
+		CB3302CF29504810009975A9 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		CB3302D129504866009975A9 /* PuzzleAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleAnswer.swift; sourceTree = "<group>"; };
+		CB3302D32950488A009975A9 /* PuzzleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCell.swift; sourceTree = "<group>"; };
+		CB3302D5295048AD009975A9 /* PuzzleSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleSize.swift; sourceTree = "<group>"; };
+		CB3302D7295048F6009975A9 /* Puzzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Puzzle.swift; sourceTree = "<group>"; };
+		CB3302DA295049C4009975A9 /* PuzzleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB33028A294FBA00009975A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3302CC29501F3F009975A9 /* OrderedCollections in Frameworks */,
+				CB3302C7294FBC0B009975A9 /* SchacherKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB33029F294FBA01009975A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3302A9294FBA01009975A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB330284294FBA00009975A9 = {
+			isa = PBXGroup;
+			children = (
+				CB33028F294FBA00009975A9 /* Crossword */,
+				CB3302A5294FBA01009975A9 /* CrosswordTests */,
+				CB3302AF294FBA01009975A9 /* CrosswordUITests */,
+				CB33028E294FBA00009975A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB33028E294FBA00009975A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB33028D294FBA00009975A9 /* Crossword.app */,
+				CB3302A2294FBA01009975A9 /* CrosswordTests.xctest */,
+				CB3302AC294FBA01009975A9 /* CrosswordUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB33028F294FBA00009975A9 /* Crossword */ = {
+			isa = PBXGroup;
+			children = (
+				CB330290294FBA00009975A9 /* CrosswordApp.swift */,
+				CB3302BF294FBA69009975A9 /* Data */,
+				CB3302C1294FBA82009975A9 /* Views */,
+				CB330294294FBA01009975A9 /* Assets.xcassets */,
+				CB330299294FBA01009975A9 /* Persistence.swift */,
+				CB33029B294FBA01009975A9 /* Crossword.xcdatamodeld */,
+				CB330296294FBA01009975A9 /* Preview Content */,
+			);
+			path = Crossword;
+			sourceTree = "<group>";
+		};
+		CB330296294FBA01009975A9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB330297294FBA01009975A9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CB3302A5294FBA01009975A9 /* CrosswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB3302A6294FBA01009975A9 /* CrosswordTests.swift */,
+			);
+			path = CrosswordTests;
+			sourceTree = "<group>";
+		};
+		CB3302AF294FBA01009975A9 /* CrosswordUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB3302B0294FBA01009975A9 /* CrosswordUITests.swift */,
+				CB3302B2294FBA01009975A9 /* CrosswordUITestsLaunchTests.swift */,
+			);
+			path = CrosswordUITests;
+			sourceTree = "<group>";
+		};
+		CB3302BF294FBA69009975A9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CB3302DA295049C4009975A9 /* PuzzleController.swift */,
+				CB3302C0294FBA7C009975A9 /* Models */,
+				CB3302CF29504810009975A9 /* Enums.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		CB3302C0294FBA7C009975A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CB3302D9295048FF009975A9 /* Puzzle */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CB3302C1294FBA82009975A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB3302C8294FC003009975A9 /* PuzzleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB3302D9295048FF009975A9 /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				CB3302D7295048F6009975A9 /* Puzzle.swift */,
+				CB3302D32950488A009975A9 /* PuzzleCell.swift */,
+				CB3302CD295047F4009975A9 /* PuzzleIndex.swift */,
+				CB3302D129504866009975A9 /* PuzzleAnswer.swift */,
+				CB3302D5295048AD009975A9 /* PuzzleSize.swift */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB33028C294FBA00009975A9 /* Crossword */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3302B6294FBA01009975A9 /* Build configuration list for PBXNativeTarget "Crossword" */;
+			buildPhases = (
+				CB330289294FBA00009975A9 /* Sources */,
+				CB33028A294FBA00009975A9 /* Frameworks */,
+				CB33028B294FBA00009975A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crossword;
+			packageProductDependencies = (
+				CB3302C6294FBC0B009975A9 /* SchacherKit */,
+				CB3302CB29501F3F009975A9 /* OrderedCollections */,
+			);
+			productName = Crossword;
+			productReference = CB33028D294FBA00009975A9 /* Crossword.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB3302A1294FBA01009975A9 /* CrosswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3302B9294FBA01009975A9 /* Build configuration list for PBXNativeTarget "CrosswordTests" */;
+			buildPhases = (
+				CB33029E294FBA01009975A9 /* Sources */,
+				CB33029F294FBA01009975A9 /* Frameworks */,
+				CB3302A0294FBA01009975A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3302A4294FBA01009975A9 /* PBXTargetDependency */,
+			);
+			name = CrosswordTests;
+			productName = CrosswordTests;
+			productReference = CB3302A2294FBA01009975A9 /* CrosswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB3302AB294FBA01009975A9 /* CrosswordUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB3302BC294FBA01009975A9 /* Build configuration list for PBXNativeTarget "CrosswordUITests" */;
+			buildPhases = (
+				CB3302A8294FBA01009975A9 /* Sources */,
+				CB3302A9294FBA01009975A9 /* Frameworks */,
+				CB3302AA294FBA01009975A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB3302AE294FBA01009975A9 /* PBXTargetDependency */,
+			);
+			name = CrosswordUITests;
+			productName = CrosswordUITests;
+			productReference = CB3302AC294FBA01009975A9 /* CrosswordUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB330285294FBA00009975A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					CB33028C294FBA00009975A9 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					CB3302A1294FBA01009975A9 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CB33028C294FBA00009975A9;
+					};
+					CB3302AB294FBA01009975A9 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = CB33028C294FBA00009975A9;
+					};
+				};
+			};
+			buildConfigurationList = CB330288294FBA00009975A9 /* Build configuration list for PBXProject "Crossword" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB330284294FBA00009975A9;
+			packageReferences = (
+				CB3302C5294FBC0B009975A9 /* XCRemoteSwiftPackageReference "SchacherKit" */,
+				CB3302CA29501F3F009975A9 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
+			productRefGroup = CB33028E294FBA00009975A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB33028C294FBA00009975A9 /* Crossword */,
+				CB3302A1294FBA01009975A9 /* CrosswordTests */,
+				CB3302AB294FBA01009975A9 /* CrosswordUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB33028B294FBA00009975A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB330298294FBA01009975A9 /* Preview Assets.xcassets in Resources */,
+				CB330295294FBA01009975A9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3302A0294FBA01009975A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3302AA294FBA01009975A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB330289294FBA00009975A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3302D6295048AD009975A9 /* PuzzleSize.swift in Sources */,
+				CB3302D42950488A009975A9 /* PuzzleCell.swift in Sources */,
+				CB3302CE295047F4009975A9 /* PuzzleIndex.swift in Sources */,
+				CB3302D229504866009975A9 /* PuzzleAnswer.swift in Sources */,
+				CB33029D294FBA01009975A9 /* Crossword.xcdatamodeld in Sources */,
+				CB3302C9294FC003009975A9 /* PuzzleView.swift in Sources */,
+				CB33029A294FBA01009975A9 /* Persistence.swift in Sources */,
+				CB3302D8295048F6009975A9 /* Puzzle.swift in Sources */,
+				CB3302D029504810009975A9 /* Enums.swift in Sources */,
+				CB3302DB295049C4009975A9 /* PuzzleController.swift in Sources */,
+				CB330291294FBA00009975A9 /* CrosswordApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB33029E294FBA01009975A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3302A7294FBA01009975A9 /* CrosswordTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB3302A8294FBA01009975A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB3302B1294FBA01009975A9 /* CrosswordUITests.swift in Sources */,
+				CB3302B3294FBA01009975A9 /* CrosswordUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB3302A4294FBA01009975A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB33028C294FBA00009975A9 /* Crossword */;
+			targetProxy = CB3302A3294FBA01009975A9 /* PBXContainerItemProxy */;
+		};
+		CB3302AE294FBA01009975A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB33028C294FBA00009975A9 /* Crossword */;
+			targetProxy = CB3302AD294FBA01009975A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CB3302B4294FBA01009975A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB3302B5294FBA01009975A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB3302B7294FBA01009975A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Crossword/Preview Content\"";
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = schacher.Crossword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB3302B8294FBA01009975A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Crossword/Preview Content\"";
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = schacher.Crossword;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB3302BA294FBA01009975A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = schacher.CrosswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crossword.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Crossword";
+			};
+			name = Debug;
+		};
+		CB3302BB294FBA01009975A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = schacher.CrosswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crossword.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Crossword";
+			};
+			name = Release;
+		};
+		CB3302BD294FBA01009975A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = schacher.CrosswordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crossword;
+			};
+			name = Debug;
+		};
+		CB3302BE294FBA01009975A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JW5G6WB9V7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = schacher.CrosswordUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crossword;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB330288294FBA00009975A9 /* Build configuration list for PBXProject "Crossword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3302B4294FBA01009975A9 /* Debug */,
+				CB3302B5294FBA01009975A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3302B6294FBA01009975A9 /* Build configuration list for PBXNativeTarget "Crossword" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3302B7294FBA01009975A9 /* Debug */,
+				CB3302B8294FBA01009975A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3302B9294FBA01009975A9 /* Build configuration list for PBXNativeTarget "CrosswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3302BA294FBA01009975A9 /* Debug */,
+				CB3302BB294FBA01009975A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB3302BC294FBA01009975A9 /* Build configuration list for PBXNativeTarget "CrosswordUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB3302BD294FBA01009975A9 /* Debug */,
+				CB3302BE294FBA01009975A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB3302C5294FBC0B009975A9 /* XCRemoteSwiftPackageReference "SchacherKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/quoimec/SchacherKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CB3302CA29501F3F009975A9 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB3302C6294FBC0B009975A9 /* SchacherKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB3302C5294FBC0B009975A9 /* XCRemoteSwiftPackageReference "SchacherKit" */;
+			productName = SchacherKit;
+		};
+		CB3302CB29501F3F009975A9 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB3302CA29501F3F009975A9 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CB33029B294FBA01009975A9 /* Crossword.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB33029C294FBA01009975A9 /* Crossword.xcdatamodel */,
+			);
+			currentVersion = CB33029C294FBA01009975A9 /* Crossword.xcdatamodel */;
+			path = Crossword.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CB330285294FBA00009975A9 /* Project object */;
+}
